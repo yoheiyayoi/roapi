@@ -8,7 +8,3 @@ export default new Elysia()
     return await getAvatarBust(Number(id));
   })
   .listen(3000);
-
-console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
-);
