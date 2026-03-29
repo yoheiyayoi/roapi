@@ -1,7 +1,7 @@
 import { Elysia } from "elysia";
 import { getAvatarBust } from "./roblox";
 
-const app = new Elysia()
+export default new Elysia()
   .get("/", "Hello!")
   .get("/helloworld", () => "Hello World by Seal!") // for fun btw
   .get("/avatar-bust/:id", async ({ params: { id } }) => {
